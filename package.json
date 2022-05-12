@@ -1,0 +1,25 @@
+{
+  "name": "The-Friend-Zone",
+  "version": "1.0.0",
+  "description": "A social network API - That you didn't know you needed!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Banger484/The-Friend-Zone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Banger484/The-Friend-Zone/issues"
+  },
+  "homepage": "https://github.com/Banger484/The-Friend-Zone#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3"
+  }
+}
