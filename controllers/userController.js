@@ -1,5 +1,5 @@
 const { ObjectId } = require("mongoose").Types;
-const { User } = require('../models')
+const { User, Thought } = require('../models')
 
 
 module.exports = {
@@ -48,8 +48,9 @@ module.exports = {
       .then((user) =>
       !user
         ? res.status(404).json({ message: 'No user has that ID.'})
-        : res.json(user)
+        : Thought.deleteMany({ username: user.username})
       )
+      .then((thought) => res.json({ message: 'That user and their thoughts have been removed.'}))
       .catch((err) => res.status(500).json(err));
   },
   addFriend(req, res) {  
