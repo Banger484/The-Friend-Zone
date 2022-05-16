@@ -51,7 +51,6 @@ module.exports = {
         : res.json(user)
       )
       .catch((err) => res.status(500).json(err));
-
   },
   addFriend(req, res) {  
     User.findOne({ _id: req.params.friendId})
